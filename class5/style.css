@@ -1,0 +1,41 @@
+* {padding: 0; margin: 0;}
+
+main {
+  height: 80vh;
+  width: 100%;
+  background-color: deepskyblue;
+  color: #fff;
+  font-size: 20px;
+  display: table;
+  border-spacing: 10vw;
+}
+
+div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+section {
+  display: table;
+  width: 65%;
+  height: 30vh;
+  margin: 5vh auto;
+  border-spacing: 1vw;
+}
+/*1) 간격의 경우 > spacing 활용
+  2) 내용물이 다른 경우 > 
+*/
+article {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2%;
+  font-size: 13px;
+}
