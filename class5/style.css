@@ -27,9 +27,11 @@ section {
   height: 30vh;
   margin: 5vh auto;
   border-spacing: 1vw;
+  table-layout: fixed;
 }
 /*1) 간격의 경우 > spacing 활용
-  2) 내용물이 다른 경우 > 
+  2) 내용물이 다른 경우 > ★td칸은 내용물의 양에 따라 자동으로 넓이가 분배
+  table-layout: fixed > 칸의 넓이를 고정할지 말지의 유무
 */
 article {
   display: table-cell;
