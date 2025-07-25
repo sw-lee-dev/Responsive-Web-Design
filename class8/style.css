@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container1 {
+  background-color: blanchedalmond;
+  display: flex;
+}
+
+.item1 {
+  background-color: rgb(186, 132, 236);
+  border: 2px solid rgb(45, 87, 224);
+  color: #fff;
+  /*flex-basis: auto; /*item의 기본 크기 지정 기본값 */
+  /* flex-basis: 20%; */
+  /*flex-grow: 1; /*container 기준으로 여분의 공간이 있을 경우 여백에 꽉차게 표현되어지는 속성 >> item의 증가하는 너비 비율을 지정 / 기본값은 0*/
+  /*flex-shrink: 1; /*유연하게 줄일 수 있는 값 - 0은 변화가 없음 >> item의 감소하는 너비 비율을 지정 / 기본값은 1*/
+  flex: 1 1 auto; /*flex-grow(1) + flex-shrink(1) + flex-basis(0)*/
+}
+
+.item1:nth-child(1) {
+  /* flex-grow: 1; */
+  /* flex-shrink: 3; */
+  flex: auto;
+}
+
+.item1:nth-child(2) {
+  /* flex-grow: 3; */
+  /* flex-shrink: 2; */
+  flex: auto;
+}
+
+.item1:nth-child(3) {
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex: 3 0 auto;
+}
+
+.item1:nth-child(4) {
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  flex: auto;
+}
+
+.container2 {
+  background-color: blanchedalmond;
+  display: flex;
+  height: 70vh;
+  justify-content: space-between;
+}
+
+.item2 {
+  background-color: rgb(186, 132, 236);
+  border: 2px solid rgb(45, 87, 224);
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.item2:nth-child(1) {
+  order: 3;
+  align-self: auto;
+}
+.item2:nth-child(2) {
+  order: 1;
+  align-self: stretch;
+}
+.item2:nth-child(3) {
+  order: 2;
+  align-self: center;
+}
+.item2:nth-child(4) {
+  order: 4;
+  align-self: flex-end;
+}
