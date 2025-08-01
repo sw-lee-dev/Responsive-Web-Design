@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 10px;
+  background-color: antiquewhite;
+  display: grid;
+  /* grid-template-columns: 100px 200px 300px 400px; */
+  /* grid-template-columns: 10% 80% 10%; */
+  /* grid-template-columns: 1fr 400px 1fr; > fraction : 분배, 분수 */
+  /* grid-template-columns: repeat(5, 1fr); > repeat(반복횟수, 반복값) */
+  /* grid-template-columns: repeat(2, 1fr 2fr); */
+  /* grid-template-columns: repeat(3, minmax(100px,300px)); > minmax(최소값,최대값) */
+  /* grid-template-columns: repeat(auto-fill, minmax(20%,auto)); > auto-fill, auto-fit : 갯수를 떠나 화면을 꽉 채우고자하는 속성 */
+  /* grid-template-columns: repeat(auto-fit, minmax(10%,auto)); */
+  grid-template-columns: repeat(2,1fr);
+  /* grid-template-rows: 200px 200px 200px; */
+  /* grid-template-rows: repeat(3,minmax(100px,auto)); */
+  /* height: 40vh; */
+
+  /*높이를 계속 지정하기 애매한 경우 auto값을 사용*/
+  grid-auto-rows: minmax(100px,auto);
+}
+
+.item {
+  border: 3px solid #000;
+  background-color: aquamarine;
+}
+
+.container1 {
+  padding: 10px;
+  background-color: rgb(205, 143, 67);
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 40vh;
+
+  /* column-gap: 10px;
+  row-gap: 20px; */
+  gap: 20px 10px;
+}
+
+.item1 {
+  border: 3px solid #000;
+  background-color: rgb(100, 207, 211);
+}
